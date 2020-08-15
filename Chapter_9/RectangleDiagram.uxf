@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>10</y>
+      <w>270</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Rectangle
+--
+-width: double = 1
+-height: double = 1
+--
+Rectangle()
+Rectangle(width: double, height: double)
+getArea(): double
+getPerimeter(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
