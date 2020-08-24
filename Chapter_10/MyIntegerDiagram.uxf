@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>50</y>
+      <w>250</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>MyInteger
+--
+-value: int
+--
++MyInteger(value: int)
+--
++getValue(): int
++isEven(): boolean
++isOdd(): boolean
++isPrime(): boolean
+_+isEven(value: int): boolean_
+_+isOdd(value: int): boolean_
+_+isPrime(value: int): boolean_
+_+isEven(value: MyInteger): boolean_
+_+isOdd(value: MyInteger): boolean_
+_+isPrime(value: MyInteger): boolean_
++equals(value: int): boolean
++equals(value: MyInteger): boolean
+_+parseInt(value: char[]): int_
+_+parseInt(value: String): int_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
