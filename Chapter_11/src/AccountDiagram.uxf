@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>0</y>
+      <w>370</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>Account
+--
+-id: int = 0
+-balance: double = 0
+-annualInterestRate: double = 0
+-dateCreated: Date
+--
++Account()
++Account(id: int, balance: double)
++getId(): int
++getBalance(): double
++getAnnualInterestRate(): double
++setId(id: int): void
++setBalance(balance: double): void
++setAnnualInterestRate(annualInterestRate: double): void
++getDateCreated(): Date
++getMonthyInterestRate(): double
++getMonthlyInterest(): double
++withdraw(amount: double): void
++deposit(amount: double): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>400</y>
+      <w>420</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>CheckingAccount
+--
+-overdraftLimit
+--
++CheckingAccount()
++CheckingAccount(id: int, balance: double, overdraftLimit: double)
++withdraw(amount: double): void
++setOverdraftLimit(overdraftLimit: double): void
++getOverdraftLimit(): double
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>400</y>
+      <w>270</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>SavingsAccount
+--
++SavingsAccount()
++SavingsAccount(id: int, balance: double)
++withdraw(amount: double): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>300</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;10.0;190.0;60.0;10.0;60.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>300</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;190.0;40.0;190.0;100.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>120</y>
+      <w>310</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>GeometricObject
+--
+-color: String
+-filled: boolean
+-dateCreated: java.util.Date
+--
++GeometricObject()
++GeometricObject(color: String, filled: boolean)
++getColor(): String
++setColor(color: String): void
++isFilled(): boolean
++setFilled(filled: boolean): void
++getDateCreated(): java.util.Date
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

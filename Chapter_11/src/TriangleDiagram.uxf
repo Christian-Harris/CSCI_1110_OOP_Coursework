@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>30</y>
+      <w>350</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Triangle
+--
+-side1: double = 1.0
+-side2: double = 1.0
+-side3: double = 1.0
+--
++Triangle()
++Triangle(side1: double, side2: double, side3: double)
++getSide1(): double
++getSide2(): double
++getSide3(): double
++getArea(): double
++getPerimeter(): double
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
