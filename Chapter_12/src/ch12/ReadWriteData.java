@@ -14,17 +14,23 @@ public class ReadWriteData {
 		//Create file object.
 		File file = new File("Exercise12_15.txt");
 		
-		//Create a new file "Exercise12_15.txt" and a PrintWriter object attached to it.
-		java.io.PrintWriter output = new java.io.PrintWriter(file);
+		if(file.exists()) {
+			System.out.println("File already exists.");
+		}
+		else {
+		
+			//Create a new file "Exercise12_15.txt" and a PrintWriter object attached to it.
+			java.io.PrintWriter output = new java.io.PrintWriter(file);
 
-		//Write 100 random integers between 0 and 99 writing them to file and separating them by a single whitespace character.
-	    for(int i = 0; i < 100; i++) {
-	    	output.print((int)(Math.random()*100));
-	    	output.print(" ");
-	    }
+			//Write 100 random integers between 0 and 99 writing them to file and separating them by a single whitespace character.
+			for(int i = 0; i < 100; i++) {
+				output.print((int)(Math.random()*100));
+				output.print(" ");
+			}
 	    
-	    //Close the PrintWriter
-	    output.close();
+			//Close the PrintWriter
+			output.close();
+		}
 	    
 	    //Create a Scanner object and attach it to the file.
 	    Scanner reader = new Scanner(file);
